@@ -1,0 +1,60 @@
+#account {
+  height: 100vh;
+}
+
+.account-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #05014a;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
+  z-index: -1;
+}
+
+.account-bg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #007bff;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 20% 100%, 0% 100%);
+  z-index: -2;
+}
+
+#account h1 {
+  font-weight: 300;
+}
+
+.account-box,
+.account-links {
+  width: 100%;
+}
+
+.account-with img {
+  width: 24px;
+}
+
+.account-with a {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11),
+    0 1px 3px rgba(0, 0, 0, .08);
+  transition: 100ms all ease-in-out;
+}
+
+.account-with a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .1),
+    0 3px 6px rgba(0, 0, 0, .08);
+}
+
+
+
+@media (min-width: 576px) {
+
+  .account-box,
+  .account-links {
+    width: 430px;
+  }
+}
